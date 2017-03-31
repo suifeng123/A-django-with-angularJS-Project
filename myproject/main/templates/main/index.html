@@ -5,8 +5,23 @@
 <link rel="stylesheet" href="{{STATIC_URL}}css/bootstrap-theme.css" type="text/css" />
 <link rel="stylesheet" href="{{STATIC_URL}}css/bootstrap.css" type="text/css" />
 <body>
-<a href="/index">sadf</a>
-<button class="btn btn-success">按钮</button>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">三大前端MV*框架展示</a>
+    </div>
+    <div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="/angular">AngularJS</a></li>
+            <li><a href="/vuejs">Vue.js</a></li>
+            <li><a href="/react">React</a>
+        </ul>
+    </div>
+    </div>
+</nav>
+<div style="text-align:center;">
+<img style="width:50%;height:50%;" src="{{STATIC_URL}}images/index.jpg" />
+</div>
 </body>
 </head>
 </html>

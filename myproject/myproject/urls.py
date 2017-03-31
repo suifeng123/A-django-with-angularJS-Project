@@ -11,5 +11,10 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$','main.views.index',name="index"),
-    url(r'^index/$','angular.views.angularindex',name="angularindex"),
+    url(r'^angular/$','angular.views.angularindex',name="angularindex"),
+    url(r'^angular1/$','angular.views.angular1',name="angular1"),
+    url(r'^angular4/$','angular.views.angular4',name="angular4"),
+    url(r'^vuejs/$','vuejs.views.index',name="vuejsindex"),
+    url(r'^react/$','react.views.index',name="reactindex"),
+    
 )

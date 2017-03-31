@@ -37,7 +37,9 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
-    'angular'
+    'angular',
+    'vuejs',
+    'react'
 )
 
 MIDDLEWARE_CLASSES = (
