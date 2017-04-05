@@ -39,7 +39,8 @@ INSTALLED_APPS = (
     'main',
     'angular',
     'vuejs',
-    'react'
+    'react',
+    'css',
 )
 
 MIDDLEWARE_CLASSES = (

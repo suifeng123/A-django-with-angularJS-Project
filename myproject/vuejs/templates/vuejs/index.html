@@ -4,8 +4,24 @@
 <title>
   VUEJS
 </title>
+<style>
+body{
+  margin:0;
+  padding:0;
+}
+
+</style>
+<script type="text/javascript" src="{{STATIC_URL}}js/vue.js"></script>
+
 </head>
 <body>
-<h1>这个是VUEJS的界面</h1>
-</body>
+{% include 'nav.html' %}
+<div id="content">
+<center style="position:absolute;left:200px;right:0px;top:0px;bottom:0px;top:00px;color:red;">
+   <div style="position:relative;top:200px;">
+   <h1>这个应用用来展示一些vue.js的一些属性</h1>
+   <h1>请点击左边导航栏的进行导航</h1>
+   </div>
+</center>
+</div>
 </html>

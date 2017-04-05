@@ -15,7 +15,10 @@ urlpatterns = patterns('',
     url(r'^angular1/$','angular.views.angular1',name="angular1"),
     url(r'^angular4/$','angular.views.angular4',name="angular4"),
     url(r'^vuejs/$','vuejs.views.index',name="vuejsindex"),
+    url(r'^vueform/$','vuejs.views.vueform',name="vueform"),
     url(r'^react/$','react.views.index',name="reactindex"),
+    url(r'^css/$','css.views.index',name="cssindex"),
+    url(r'^zhiling/$','vuejs.views.zhiling',name="vuejszhiling"),
     
     
 )

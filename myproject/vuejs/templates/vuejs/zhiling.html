@@ -1,0 +1,52 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>
+  VUEJS
+</title>
+<style>
+body{
+  margin:0;
+  padding:0;
+}
+.main {
+ position:absolute;
+ left:200px;
+ top:0px;
+ bottom:0px;
+ right:0px;
+}
+</style>
+<script type="text/javascript" src="{{STATIC_URL}}js/vue.js"></script>
+<script type="text/javascript">
+</script>
+</head>
+<body>
+{% include 'nav.html' %}
+<div class="main" id="main">
+<div id="example" @click="up">
+  <div id="demo" v-demo.literal="foo bar baz"></div>
+</div>
+</div>
+</body>
+<script>
+Vue.directive('demo',function(value) {
+	console.log(value);
+}
+)
+	
+ var exampleVM2 = new Vue({
+	 el:'#demo',
+	 data: {
+	    msg:'hello'
+ 
+	 },
+	 methods: {
+		 up: function() {
+			 console.log("点击");
+		 }
+	 }
+ })
+
+</script>
+</html>
